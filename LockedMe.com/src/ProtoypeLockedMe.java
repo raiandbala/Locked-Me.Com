@@ -15,7 +15,7 @@ class ProtoypeLockedMe {
 		System.out.println("But First kindly provide the path name including the desired filename and type below : ");
 		String Path = scan.nextLine();
 		File file = new File(Path); 
-		boolean result;  
+		 
 		
 		System.out.println("Great! Now which option do you want to go with from below? Please provide the option no.:");
 		System.out.println("1 - Add a file to the existing directory list.");
@@ -25,14 +25,21 @@ class ProtoypeLockedMe {
 		int Option = scan.nextInt();
 		try   
 		{ 
-			result = file.createNewFile(); 
-		if(result && Option == 1)    
+			boolean AddFile; 
+			boolean DeleteFile;
+			AddFile = file.createNewFile(); 
+			DeleteFile = file.delete();
+			if(AddFile && Option == 1)    
+			{  
+			System.out.println("file created "+file.getCanonicalPath()); 
+			}  
+			else if(DeleteFile && Option == 2)    
 		{  
-		System.out.println("file created "+file.getCanonicalPath()); 
+		System.out.println("file deleted "+file.getCanonicalPath()); 
 		}  
 		else  
 		{  
-		System.out.println("File already exist at location: "+file.getCanonicalPath());  
+		System.out.println("File not found at location: "+file.getCanonicalPath());  
 		}  
 		}   
 		catch (IOException e)   
