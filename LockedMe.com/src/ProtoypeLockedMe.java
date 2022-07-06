@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class ProtoypeLockedMe {
 
 	public static void WelcomePage(String detail) {
@@ -10,10 +11,17 @@ class ProtoypeLockedMe {
 		System.out.println("2 - Delete a user specified file from the existing directory list.");
 		System.out.println("3 - Search a user specified file from the main directory.");
 		System.out.println("So which option do you want to go with? Please provide the option no. below :");
-loop();
 	}
-	public static void loop() {
-		SecondOption();
+	public static void ThirdOption(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Do you wish to continue with the options? Press Yes to continue or No to exit");
+		String wish = scan.nextLine();
+		if(wish.equalsIgnoreCase("Yes")) {
+			SecondOption();
+		}
+		else {
+			System.out.println("Bye! have a nice day");
+		}
 	}
 	public static void main(String[] args) {
 		WelcomePage("+++++++++Welcome to LockedMe!+++++++++");
@@ -24,6 +32,8 @@ loop();
 		WelcomePage("3. Email: raiandbala@outlook.com");
 		WelcomePage("-----------------------------------------------------------------------------------");
 		SecondOption();
+		ThirdOption();
+		
 	}
 
 }
