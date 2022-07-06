@@ -15,8 +15,6 @@ class ProtoypeLockedMe {
 		System.out.println("But First kindly provide the path name including the desired filename and type below : ");
 		String Path = scan.nextLine();
 		File file = new File(Path); 
-		 
-		
 		System.out.println("Great! Now which option do you want to go with from below? Please provide the option no.:");
 		System.out.println("1 - Add a file to the existing directory list.");
 		System.out.println("2 - Delete a user specified file from the existing directory list.");
@@ -27,16 +25,22 @@ class ProtoypeLockedMe {
 		{ 
 			boolean AddFile; 
 			boolean DeleteFile;
-			AddFile = file.createNewFile(); 
-			DeleteFile = file.delete();
-			if(AddFile && Option == 1)    
+			boolean SearchFile;
+			if(Option == 1)    
 			{  
-			System.out.println("file created "+file.getCanonicalPath()); 
+				AddFile = file.createNewFile(); 
+			System.out.println("file created "); 
 			}  
-			else if(DeleteFile && Option == 2)    
+			else if(Option == 2)    
 		{  
-		System.out.println("file deleted "+file.getCanonicalPath()); 
+				DeleteFile = file.delete();
+		System.out.println("file deleted "); 
 		}  
+			else if(Option == 3)    
+			{  
+				SearchFile = file.exists();
+			System.out.println("file found "+file.getCanonicalPath()); 
+			}  
 		else  
 		{  
 		System.out.println("File not found at location: "+file.getCanonicalPath());  
