@@ -1,7 +1,7 @@
 
 import java.io.File;
 import java.util.Scanner;
-import java.io.IOException; 
+import java.io.IOException;
 
 class ProtoypeLockedMe {
 
