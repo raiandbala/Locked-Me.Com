@@ -56,7 +56,6 @@ class ProtoypeLockedMe {
 		WelcomePage("Generic details : ");
 		WelcomePage("1. Project: LockedMe.com");
 		WelcomePage("2. Developed by: Shubham Raj");
-		WelcomePage("2. Developed by: Shubham Raj");
 		WelcomePage("3. Email: raiandbala@outlook.com");
 		WelcomePage("-----------------------------------------------------------------------------------");
 		SecondOption();
