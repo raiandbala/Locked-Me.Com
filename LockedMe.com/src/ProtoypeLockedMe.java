@@ -6,7 +6,7 @@ class ProtoypeLockedMe {
 	}
 	
 	public static void SecondOption(){
-		System.out.println("We have various options for you to select : ");
+		System.out.println("Ok then, we have various options for you to select : ");
 		System.out.println("1 - Add a file to the existing directory list.");
 		System.out.println("2 - Delete a user specified file from the existing directory list.");
 		System.out.println("3 - Search a user specified file from the main directory.");
@@ -30,7 +30,7 @@ class ProtoypeLockedMe {
 		WelcomePage("2. Developed by: Shubham Raj");
 		WelcomePage("2. Developed by: Shubham Raj");
 		WelcomePage("3. Email: raiandbala@outlook.com");
-		WelcomePage("-----------------------------------------------------------------------------------");
+		WelcomePage("----------------------------------------------------------------------------------");
 		SecondOption();
 		ThirdOption();
 		
