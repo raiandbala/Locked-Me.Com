@@ -14,7 +14,7 @@ class ProtoypeLockedMe {
 			System.out.println("But First kindly provide the path name including the desired filename and type below : ");
 			String Path = scan.nextLine();
 			File file = new File(Path); 
-			System.out.println("Great! Now which option do you want to go with from below? Please provide the option no.:");
+			System.out.println("Great! Now which option do you want to go with from below? Please provide the option no. :");
 			System.out.println("1 - Add a file to the existing directory list.");
 			System.out.println("2 - Delete a user specified file from the existing directory list.");
 			System.out.println("3 - Search a user specified file from the main directory.");
