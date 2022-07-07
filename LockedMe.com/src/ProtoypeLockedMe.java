@@ -1,8 +1,6 @@
-
 import java.util.Scanner;
 import java.io.File;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.io.IOException;
 
@@ -16,7 +14,7 @@ class ProtoypeLockedMe {
 	// Method for First Option to return the current file names from any folder in ascending order.
 	public static void FirstOption() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter Folder Path : ");
+		System.out.println("Enter Folder Path so that the files inside it can be displayed in ascending order: ");
 		File fileDir = new File(scan.nextLine());
 		if(fileDir.isDirectory()){
 			List<String> listFile = Arrays.asList(fileDir.list());
@@ -27,7 +25,7 @@ class ProtoypeLockedMe {
 		else{
 			System.out.println(fileDir.getAbsolutePath() + " is not a directory");
 		} }
-
+	// Method for Second Option to work according to options mentioned in below program
 		public static void SecondOption(){
 		Scanner scan = new Scanner(System.in);
 			System.out.println("We have various options for you to select : ");
@@ -82,37 +80,19 @@ class ProtoypeLockedMe {
 		}
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
+
 		WelcomePage("+++++++++Welcome to LockedMe!++++++++++");
-=======
-		WelcomePage("++++++++++Welcome to LockedMe!+++++++++");
-
 		WelcomePage("Application Details : ");
-
->>>>> refs/heads/Hotfix_Branch
-		WelcomePage("app details : ");
-
 		WelcomePage("1. Project: LockedMe.com");
 		WelcomePage("2. Developed by: Shubham Raj");
-
-
 		WelcomePage("3. Git Repo: https://github.com/raiandbala/Locked-Me.Com");
 		WelcomePage("4. Email: raiandbala@outlook.com");
-
-
-		WelcomePage("3. Email: raiandbala@outlook.com");
-
-		WelcomePage("------------------------------------------------------------------");
+		WelcomePage("----------------------------------------------------------------------------------");
 		FirstOption();
 		WelcomePage("----------------------------------------------------------------------------------");
 		SecondOption();
 		WelcomePage("----------------------------------------------------------------------------------");
 		ThirdOption();
-<<<<<<< HEAD
-		
-=======
-	
->>>>>>> refs/heads/Hotfix_Branch
 	}
 }
 
